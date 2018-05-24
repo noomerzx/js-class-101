@@ -46,9 +46,6 @@ let persons = [
   }
 ]
 
-console.log(persons.map(person => {
-  return {
-    name: person.name,
-    age: person.age
-  }
-}))
+console.log(persons.reduce((result, curr) => {
+  return result + curr.age
+}, 0))

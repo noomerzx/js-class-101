@@ -46,6 +46,5 @@ let persons = [
   }
 ]
 
-console.log(persons.reduce((result, curr) => {
-  return result + curr.age
-}, 0))
+console.log(persons.filter(person => person.age < 30))
+console.log(persons.find(person => person.age === 22))
