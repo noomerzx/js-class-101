@@ -46,9 +46,50 @@ let persons = [
   }
 ]
 
-console.log(persons.map(person => {
-  return {
-    name: person.name,
-    age: person.age
-  }
-}))
+let result = [{
+    name: 'Mark',
+    age: 18,
+    friends: [{
+      name: 'Jack',
+      age: 30
+    }]
+  },
+  {
+    name: 'Paul',
+    age: 22,
+    friends: [{
+      name: 'Peter',
+      age: 27
+    }]
+  },
+  {
+    name: 'Bill',
+    age: 15,
+    friends: [{
+      name: 'Peter',
+      age: 27
+    }]
+  }{
+    name: 'Peter',
+    age: 27,
+    friends: [{
+      name: 'Paul',
+      age: 22
+    }]
+  },
+  {
+    name: 'Sarah',
+    age: 24,
+    friends: [{
+      name: 'Paul',
+      age: 22
+    }]
+  },
+  {
+    name: 'Jill',
+    age: 31,
+    friends: [{
+      name: 'Paul',
+      age: 22
+    }]
+}]

@@ -46,9 +46,5 @@ let persons = [
   }
 ]
 
-console.log(persons.map(person => {
-  return {
-    name: person.name,
-    age: person.age
-  }
-}))
+console.log(persons.filter(person => person.age < 30))
+console.log(persons.find(person => person.age === 22))

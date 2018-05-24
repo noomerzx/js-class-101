@@ -46,9 +46,13 @@ let persons = [
   }
 ]
 
-console.log(persons.map(person => {
-  return {
-    name: person.name,
-    age: person.age
-  }
-}))
+console.log(persons.reduce((result, curr) => {
+  result.push(curr.friends.map(man => {
+    man.friends = [{
+      name: curr.name,
+      age: curr.age
+    }]
+    return man
+  }))
+  return result
+}, []))
